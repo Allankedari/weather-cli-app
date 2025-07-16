@@ -6,5 +6,7 @@ if (!location) {
     process.exit(1);
 }
 
-// Simulate API call
+
 console.log(`Weather in ${location}: Summer, 30°C`);
+
+
