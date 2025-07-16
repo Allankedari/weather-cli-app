@@ -1,0 +1,19 @@
+name: Weather App CI
+
+on:
+  push:
+    branches: [ "master", "feature/improve-weather" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Run Tests
+        run: node test.js
