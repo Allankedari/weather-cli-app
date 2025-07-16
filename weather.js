@@ -7,4 +7,4 @@ if (!location) {
 }
 
 // Simulate API call
-console.log(`Weather in ${location}: Sunny, 28°C`);
+console.log(`Weather in ${location}: Summer, 30°C`);
